@@ -12,7 +12,7 @@ $box-shadow-color: 0px 3px 1px rgba(0, 0, 0, 0.1),
 0px 2px 2px rgba(0, 0, 0, 0.12);
 $cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 
-// - //
+// ///////////////////////// //
 
 html {
 	box-sizing: border-box;
@@ -27,6 +27,15 @@ body {
 	font-size: 14px;
 	margin: 0;
 }
+
+body .modal-open .mob-menu {
+	overflow: hidden;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
 
 *,
 *::before,
@@ -56,4 +65,6 @@ ul, ol {
 
 img {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }

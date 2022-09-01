@@ -1,10 +1,14 @@
 .portfolio-block {
 	background: $white-color;
+    height: 100%;
 
 	&__description {
 		border: 1px solid #eeeeee;
 		border-top: none;
 		padding: 20px 24px;
+		@media screen and (min-width: 768px) {
+			flex-grow: 1;
+		}
 	}
 
 	&__title {
@@ -28,6 +32,11 @@
 		display: block;
 		text-decoration: none;
 		transition: box-shadow 250ms $cubic-bezier;
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
 		
 		&:hover,
 		&:focus {

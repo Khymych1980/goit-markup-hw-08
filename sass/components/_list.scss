@@ -2,12 +2,56 @@
 	display: flex;
 	gap: 30px;
 
-	&--header {
-		margin-left: auto;
-		align-items: center;
+	&--skils-box {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		@media screen and (min-width:768px) {
+			&__item { width: calc((100% - 30px) / 2); }	
+			}
+
+		@media screen and (min-width: 1200px) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	&--client {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+
+		&__item { 
+			width: calc((100% - 30px) / 2);
+		}
+
+		@media screen and (min-width: 768px) {
+			&__item { 
+				width: calc((100% - 60px) / 3);
+			}
+		}
+		@media screen and (min-width: 1200px) {
+	      flex-wrap: nowrap;
+		}
+		
 	}
 
 	&--portfolio-grid {
 		flex-wrap: wrap;
+		justify-content: center;
+
+		@media screen and (min-width: 768px) {
+			& .list__item {
+			flex-basis: calc((100% - 30px) / 2);
+		}
 	}
+
+	    @media screen and (min-width: 1200px) {
+			& .list__item {
+			flex-basis: calc((100% - 60px) / 3);
+			}
+		}
+}
+
 }
