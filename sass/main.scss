@@ -1,16 +1,8 @@
-
-// - //
+// Утилиты
 @import './utils/variables';
 @import './utils/visually-hidden';
-// - //
-@import './components/header';
-@import './components/hero';
-@import './components/skils-box';
-@import './components/box-work';
-@import './components/box-person';
-@import './components/client-logo';
-@import './components/footer';
-// - //
+
+// Отдельные блоки БЕМ
 @import './components/conteiner';
 @import './components/section';
 @import './components/button';
@@ -21,3 +13,11 @@
 @import './components/logo';
 @import './components/social-icon-list';
 
+// Блоки БЕМ секций
+@import './components/header';
+@import './components/hero';
+@import './components/skils-box';
+@import './components/box-work';
+@import './components/box-person';
+@import './components/client-logo';
+@import './components/footer';

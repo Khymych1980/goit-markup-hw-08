@@ -1,7 +1,8 @@
-// - //
+// Утилиты
 @import './utils/variables';
 @import './utils/visually-hidden';
-// - //
+
+// Отдельные блоки БЕМ
 @import './components/conteiner';
 @import './components/section';
 @import './components/button';
@@ -9,7 +10,8 @@
 @import './components/h2-title';
 @import './components/logo';
 @import './components/social-icon-list';
-// - //
+
+// Блоки БЕМ секций
 @import './components/header';
 @import './components/filtre-list';
 @import './components/portfolio-block';
